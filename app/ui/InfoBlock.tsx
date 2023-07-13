@@ -18,7 +18,7 @@ export interface InfoBlockProps {
 
 export function InfoBlock({...props}: InfoBlockProps) {
 	return (
-		<div className="mb-20 text-center">
+		<div className="text-center">
 			<div className={`w-[202px] h-[202px] rounded-[50%] mb-12 mx-auto ${props.bgGradient} `}>
 				<Image
 					src={props.imageSrc}

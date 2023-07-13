@@ -8,7 +8,7 @@ export interface SectionLinkProps {
 
 export function SectionLink({...props}: SectionLinkProps) {
 	return (
-		<div className={`flex flex-col items-center bg-no-repeat px-[38px] py-[90px] rounded text-white uppercase ${props.bg}`}>
+		<div className={`flex flex-col items-center bg-no-repeat bg-cover bg-center px-[38px] py-[90px] rounded text-white uppercase ${props.bg}`}>
 			<h2 className="font-medium text-[28px]">{props.name}</h2>
 			<Link className="flex items-center gap-5 font-medium text-[15px] tracking-[5px]" href={props.href}>
 				<span>View projects</span>
