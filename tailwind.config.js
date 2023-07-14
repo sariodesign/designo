@@ -27,6 +27,9 @@ module.exports = {
         'cta-web-design': "url('/image-app-design.jpg')",
         'cta-app-design': "url('/image-web-design.jpg')",
         'cta-graphic-design': "url('/image-graphic-design.jpg')",
+        'cta-web-design-tablet': "url('/tablet/image-app-design.jpg')",
+        'cta-app-design-tablet': "url('/tablet/image-web-design.jpg')",
+        'cta-graphic-design-tablet': "url('/tablet/image-graphic-design.jpg')",
         'info-pattern': "url('/bg-pattern-design-pages-intro-mobile.svg')"
       },
       colors: {
@@ -36,6 +39,7 @@ module.exports = {
         'light-grey': '#F1F3F5',
         'peach': '#E7816B',
         'light-peach': '#FFAD9B',
+        'very-light-peach': '#FDF3F0',
         'gradient-info': 'rgba(93,2,2,.1)'
       },
     },

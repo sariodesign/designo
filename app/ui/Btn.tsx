@@ -5,7 +5,7 @@ export enum BtnVariant {
 	Light
 }
 
-interface BtnProps {
+export interface BtnProps {
 	label: string,
 	href?: string,
 	variant: BtnVariant

@@ -8,8 +8,8 @@ export interface SectionLinkProps {
 
 export function SectionLink({...props}: SectionLinkProps) {
 	return (
-		<div className={`flex flex-col items-center bg-no-repeat bg-cover bg-center px-[38px] py-[90px] rounded text-white uppercase ${props.bg}`}>
-			<h2 className="font-medium text-[28px]">{props.name}</h2>
+		<div className={`flex flex-col items-center bg-no-repeat bg-cover bg-center px-[38px] py-[90px] rounded text-white uppercase ${props.bg} sm:${props.bg}-tablet`}>
+			<h2 className="font-medium text-[28px] sm:text-[40px] sm:mb-6 sm:leading-[48px]">{props.name}</h2>
 			<Link className="flex items-center gap-5 font-medium text-[15px] tracking-[5px]" href={props.href}>
 				<span>View projects</span>
 				<svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">

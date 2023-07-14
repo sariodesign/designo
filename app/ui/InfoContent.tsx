@@ -2,12 +2,17 @@
 
 import { InfoBlock, InfoBlockProps } from "./InfoBlock";
 
-export function InfoContent({contents}:{contents:InfoBlockProps[]}) {
-	if (!contents.length) return null;
+interface InfoContentProps {
+	contents: InfoBlockProps[],
+	lastItem?: boolean
+}
+
+export function InfoContent({...props}:InfoContentProps) {
+	if (!props.contents) return null;
 
 	return (
-		<div className="flex flex-col gap-y-20 mb-[311px] px-6">
-			{contents.map((content) => (
+		<div className={props.lastItem ? `flex flex-col gap-y-20 px-6 sm:gap-y-8 mb-[311px]` : `flex flex-col gap-y-20 px-6 sm:gap-y-8 py-[120px]`}>
+			{props.contents.map((content) => (
 				<InfoBlock key={content.name} {...content} />
 			))}
 		</div>
