@@ -17,7 +17,7 @@ export function Navigation({navLinks, isActive }: { navLinks:LinkItem[], isActiv
  
         return (
           <Link
-            className="text-white text-2xl uppercase sm:text-black sm:text-sm"
+            className="text-white text-2xl uppercase sm:text-black sm:text-sm md:after:content-[''] md:after:w-0 md:after:transition-all md:after:h-px md:after:bg-black md:after:block md:hover:after:w-full"
            	href={link.href}
             key={link.name}
           >
