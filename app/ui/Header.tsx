@@ -2,9 +2,10 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { Navigation } from './Navigation'
 
-import { useState } from 'react' 
+import { useState, useEffect } from 'react' 
 
 const navLinks = [
   {
@@ -23,10 +24,17 @@ const navLinks = [
  
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false)
+	const pathname = usePathname()
+  const searchParams = useSearchParams()
  
 	const handlerToggleMenu = () => {
 		setIsOpen(!isOpen)
-	} 
+	}
+	
+	// Reset state of navigation on dynamic route change.
+  useEffect(() => {
+		setIsOpen(false)
+  }, [pathname, searchParams])
 
 
   return (
