@@ -41,7 +41,7 @@ export default function Contacts() {
   return (
     <main className="min-h-screen">
       <InfoContent contents={infoContentList} />
-      <Footer />
+      <Footer cta={false} />
     </main>
   )
 }
