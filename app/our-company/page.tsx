@@ -61,7 +61,7 @@ export default function OurCompany() {
         lastItem={true}
       />
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />
-      <Footer />
+      <Footer cta={true} />
     </main>
   )
 }

@@ -53,21 +53,21 @@ const socialList = [
 const footerNav = [
 	{
 		label: "our company",
-		href: ""
+		href: "/our-company"
 	},
 	{
 		label: "locations",
-		href: ""
+		href: "/locations"
 	},
 	{
 		label: "contact",
-		href: ""
+		href: "/contact"
 	}
 ]
 
-export function Footer() {
+export function Footer({cta}:{cta:boolean}) {
 	return (
-		<footer className="text-center bg-black px-6 pb-16 pt-[255px]">
+		<footer className={cta ? `text-center bg-black px-6 pb-16` : `text-center bg-black px-6 pb-16 pt-[255px]`}>
 			<Image
 				className="mb-8 mx-auto"
 				src="/logo-light.png"
