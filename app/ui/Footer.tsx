@@ -67,22 +67,28 @@ const footerNav = [
 
 export function Footer({cta}:{cta:boolean}) {
 	return (
-		<footer className={cta ? `text-center bg-black px-6 pb-16` : `text-center bg-black px-6 pb-16 pt-[255px]`}>
-			<Image
-				className="mb-8 mx-auto"
-				src="/logo-light.png"
-				width="202"
-				height="27"
-				alt="Logo Designo Footer"
-			/>
-			{footerNav && <ul className="border-t-[1px] border-light-grey pt-8 flex flex-col gap-y-8 mb-10">
-				{footerNav.map((item,index) => (
-					<Link className="text-white uppercase" key={index} href={item.href}>{item.label}</Link>
-				))}
-			</ul>}
-			<FooterText firstTextRow='Designo Central Office' otherTextRows={['3886 Wellington Street','Toronto, Ontario M9C 3J5']} />
-			<FooterText firstTextRow='Contact Us (Central Office)' otherTextRows={['P : +1 253-863-8967','M : contact@designo.co']} />
-			<FooterSocial socials={socialList} />
+		<footer className={cta ? `text-center bg-black px-6 pb-16 pt-[255px] sm:pt-[166px]` : `text-center bg-black px-6 pb-16`}>
+			<div className="sm:max-w-[688px] md:max-w-[1110px] sm:mx-auto">
+				<div className="sm:flex sm:justify-between sm:pb-10 sm:mb-8 sm:border-b-[1px] sm:border-footer-color">
+					<Image
+						className="mb-8 mx-auto sm:m-0"
+						src="/logo-light.png"
+						width="202"
+						height="27"
+						alt="Logo Designo Footer"
+					/>
+					{footerNav && <ul className="border-t-[1px] border-footer-color pt-8 flex flex-col gap-y-8 mb-10 sm:flex-row sm:border-0 sm:p-0 sm:m-0 sm:gap-x-[42px]">
+						{footerNav.map((item,index) => (
+							<Link className="text-white uppercase font-light text-[14px]" key={index} href={item.href}>{item.label}</Link>
+						))}
+					</ul>}
+				</div>
+				<div className="sm:flex sm:justify-between sm:items-end">
+					<FooterText firstTextRow='Designo Central Office' otherTextRows={['3886 Wellington Street','Toronto, Ontario M9C 3J5']} />
+					<FooterText firstTextRow='Contact Us (Central Office)' otherTextRows={['P : +1 253-863-8967','M : contact@designo.co']} />
+					<FooterSocial socials={socialList} />
+				</div>
+			</div>
 		</footer>
 	)
 }

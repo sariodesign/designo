@@ -3,24 +3,23 @@ import { Hero } from '@/app/ui/Hero'
 import { Sections } from '@/app/ui/Sections'
 import { InfoContent } from './ui/InfoContent'
 import { Cta } from './ui/Cta'
-import { Footer } from './ui/Footer'
 
 export default function Home() {
   const sectionList = [
     {
       bg: "bg-cta-web-design",
       href: "/web-design",
-      name: "Web design"
+      name: "Web design",
     },
     {
       bg: "bg-cta-app-design",
       href: "/app-design",
-      name: "App design"
+      name: "App design",
     },
     {
       bg: "bg-cta-graphic-design",
       href: "/graphic-design",
-      name: "Graphic design"
+      name: "Graphic design",
     }
   ]
 
@@ -56,9 +55,8 @@ export default function Home() {
         image={{src: "/phone.png", alt:"Phone", width: 280, height: 573}}
       />
       <Sections links={sectionList} />
-      <InfoContent contents={infoContentList} lastItem={true} />
+      <InfoContent contents={infoContentList} gap="gap-y-20 sm:gap-y-8 md:gap-x-[30px]" lastItem={true} />
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />
-      <Footer cta={true} />
     </main>
   )
 }

@@ -24,12 +24,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-pattern': "url('/bg-pattern-hero-home.svg')",
-        'cta-web-design': "url('/image-app-design.jpg')",
-        'cta-app-design': "url('/image-web-design.jpg')",
-        'cta-graphic-design': "url('/image-graphic-design.jpg')",
-        'cta-web-design-tablet': "url('/tablet/image-app-design.jpg')",
-        'cta-app-design-tablet': "url('/tablet/image-web-design.jpg')",
-        'cta-graphic-design-tablet': "url('/tablet/image-graphic-design.jpg')",
+        'cta-web-design': "url('/desktop/image-web-design.jpg')",
+        'cta-app-design': "url('/desktop/image-app-design.jpg')",
+        'cta-graphic-design': "url('/desktop/image-graphic-design.jpg')",
         'info-pattern': "url('/bg-pattern-design-pages-intro-mobile.svg')"
       },
       colors: {
@@ -40,6 +37,7 @@ module.exports = {
         'peach': '#E7816B',
         'light-peach': '#FFAD9B',
         'very-light-peach': '#FDF3F0',
+        'border-footer-color': 'rgba(151,151,151,0.1)',
         'gradient-info': 'rgba(93,2,2,.1)'
       },
     },

@@ -1,7 +1,6 @@
 import { Location } from "../ui/LocationBlock"
 import { BtnVariant } from '../ui/Btn'
 import { Cta } from '../ui/Cta'
-import { Footer } from "../ui/Footer"
 
 export default function Locations() {
 
@@ -10,8 +9,12 @@ export default function Locations() {
         mapImage: {
           src: '/image-map-canada.png',
           alt: '',
-          width: 375 ,
-          height: 320
+          width: 1920,
+          height: 1080,
+          responsive: {
+            tablet: '/tablet/image-map-canada.png',
+            desktop: '/image-map-canada.png'
+          }
         },
         place: 'canada',
         info: [
@@ -29,8 +32,12 @@ export default function Locations() {
       mapImage: {
         src: '/image-map-australia.png',
         alt: '',
-        width: 375 ,
-        height: 320
+        width: 1920,
+        height: 1080,
+        responsive: {
+          tablet: '/tablet/image-map-australia.png',
+          desktop: '/image-map-australia.png'
+        }
       },
       place: 'australia',
       info: [
@@ -42,14 +49,19 @@ export default function Locations() {
           heading: 'Contact',
           text: ['P : (02) 6720 9092','M : contact@designo.au']
         }
-      ]
+      ],
+      reverse: true
     },
     {
       mapImage: {
         src: '/image-map-united-kingdom.png',
         alt: '',
-        width: 375 ,
-        height: 320
+        width: 1920,
+        height: 1080,
+        responsive: {
+          tablet: '/tablet/image-map-uk.png',
+          desktop: '/image-map-united-kingdom.png'
+        }
       },
       place: 'united kingdom',
       info: [
@@ -67,10 +79,9 @@ export default function Locations() {
   ]
 
   return (
-    <main className="min-h-screen">
+    <main>
       {locations.map((item, index) => <Location key={index} {...item} />)}
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />
-      <Footer cta={true} />
     </main>
   )
 }

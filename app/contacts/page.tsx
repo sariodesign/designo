@@ -1,6 +1,7 @@
+import { HeroContact } from '../ui/HeroContact'
 import { InfoContent } from '../ui/InfoContent'
 import { BtnVariant } from '../ui/Btn'
-import { Footer } from "../ui/Footer"
+import { ContactForm } from '../ui/ContactForm'
 
 const infoContentList = [
   {
@@ -40,8 +41,8 @@ const infoContentList = [
 export default function Contacts() {
   return (
     <main className="min-h-screen">
-      <InfoContent contents={infoContentList} />
-      <Footer cta={false} />
+      <HeroContact title="Contact us" subtitle="Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line." />
+      <InfoContent contents={infoContentList} gap="gap-y-20" />
     </main>
   )
 }

@@ -8,10 +8,11 @@ export enum BtnVariant {
 export interface BtnProps {
 	label: string,
 	href?: string,
+	type?: 'submit' | 'button' | 'reset',
 	variant: BtnVariant
 }
 
-const btnBaseCls = "inline-block py-[16px] px-7 rounded-[8px] text-base transition uppercase"
+const btnBaseCls = "inline-block max-w-fit py-[16px] px-7 rounded-[8px] text-base transition uppercase"
 const btnPrimaryCls = "bg-peach text-white"
 const btnLightCls = "bg-white text-black hover:bg-light-peach"
 
@@ -23,7 +24,7 @@ export function Btn({...props}: BtnProps) {
 		props.href ? (
 			<Link className={btnClasses} href={props.href}>{props.label}</Link>
 		) : (
-			<button className={btnClasses} >{props.label}</button>
+			<button className={btnClasses} type={props.type}>{props.label}</button>
 		)
 	)
 }

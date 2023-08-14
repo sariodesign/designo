@@ -1,6 +1,7 @@
 import './globals.css'
 import { Jost } from 'next/font/google'
 import { Header } from '@/app/ui/Header';
+import { Footer } from './ui/Footer';
 
 const jost = Jost({ subsets: ['latin'] })
 
@@ -16,9 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jost.className } max-w-[1110px] mx-auto sm:px-10`}>
-        <Header />
-        {children}
+      <body className={`${jost.className }`}>
+        <div className="max-w-[1110px] mx-auto sm:px-10 md:px-0">
+          <Header />
+          {children}
+        </div>
+        <Footer cta={true} />
       </body>
     </html>
   )
