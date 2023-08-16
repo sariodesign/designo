@@ -1,4 +1,4 @@
-
+'use client'
 interface responsiveImage {
 	tablet: string,
 	desktop: string

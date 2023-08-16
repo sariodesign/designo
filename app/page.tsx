@@ -1,8 +1,8 @@
 import { BtnVariant }  from '@/app/ui/Btn'
 import { Hero } from '@/app/ui/Hero'
 import { Sections } from '@/app/ui/Sections'
-import { InfoContent } from './ui/InfoContent'
-import { Cta } from './ui/Cta'
+import { InfoContent } from '@/app/ui/InfoContent'
+import { Cta } from '@/app/ui/Cta'
 
 export default function Home() {
   const sectionList = [
@@ -47,7 +47,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen home">
       <Hero 
         title="Award-winning custom designs and digital branding solutions" 
         subtitle="With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services."
