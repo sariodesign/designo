@@ -27,7 +27,10 @@ module.exports = {
         'cta-web-design': "url('/desktop/image-web-design.jpg')",
         'cta-app-design': "url('/desktop/image-app-design.jpg')",
         'cta-graphic-design': "url('/desktop/image-graphic-design.jpg')",
-        'info-pattern': "url('/bg-pattern-design-pages-intro-mobile.svg')"
+        'info-pattern': "url('/bg-pattern-design-pages-intro-mobile.svg')",
+        'cta-pattern': "url('/bg-pattern-call-to-action.svg')",
+        'two-circles': "url('/bg-pattern-two-circles.svg')",
+        'three-circles': "url('/bg-pattern-three-circles.svg')"
       },
       colors: {
         'white': '#FFFFFF',

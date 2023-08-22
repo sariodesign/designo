@@ -12,7 +12,7 @@ export interface BtnProps {
 	variant: BtnVariant
 }
 
-const btnBaseCls = "inline-block max-w-fit py-[16px] px-7 rounded-[8px] text-base transition uppercase"
+const btnBaseCls = "inline-block w-[152px] py-[16px] rounded-[8px] text-base text-center transition uppercase"
 const btnPrimaryCls = "bg-peach text-white"
 const btnLightCls = "bg-white text-black hover:bg-light-peach"
 

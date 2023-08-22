@@ -25,11 +25,11 @@ export function ContactForm() {
   };
 
 	return (
-		<form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">
-      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="text" value={formData.name} onChange={handleChange} id="first" name="name" placeholder="Name" required />
-      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="email" value={formData.email} onChange={handleChange} id="email" name="email" placeholder="Email Address" required />
-      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" required />
-      <textarea className="bg-transparent text-black border-b text-white p-2 mb-10 w-full placeholder:text-white placeholder:opacity-50" id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" required></textarea>
+		<form onSubmit={handleSubmit} className="flex flex-col justify-center items-center w-full sm:items-end">
+      <input className="bg-transparent text-black border-b text-white pb-[11px] pl-4 mb-6 w-full placeholder:text-white placeholder:opacity-50" type="text" value={formData.name} onChange={handleChange} id="first" name="name" placeholder="Name" required />
+      <input className="bg-transparent text-black border-b text-white pb-[11px] pl-4 mb-6 w-full placeholder:text-white placeholder:opacity-50" type="email" value={formData.email} onChange={handleChange} id="email" name="email" placeholder="Email Address" required />
+      <input className="bg-transparent text-black border-b text-white pb-[11px] pl-4 mb-6 w-full placeholder:text-white placeholder:opacity-50" type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" required />
+      <textarea className="bg-transparent text-black border-b text-white pb-[11px] pl-4 mb-6 w-full placeholder:text-white placeholder:opacity-50" rows={4} id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" required></textarea>
       <Btn label="Submit" variant={BtnVariant.Light}/>
     </form>
 	)

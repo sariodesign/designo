@@ -10,7 +10,7 @@ interface CtaProps {
 
 export function Cta({...props}: CtaProps) {
 	return (
-		<section className="px-6 relative">
+		<section className="px-6 relative bg-cta-pattern">
 			<div className="cta">
 				<div className="md:max-w-[456px]">
 					<h3 className="text-[32px] leading-[36px] mb-4 md:text-[40px] font-semibold">{props.title}</h3>
