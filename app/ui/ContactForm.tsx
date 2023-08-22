@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import { Btn , BtnVariant} from './Btn'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,12 +25,12 @@ export function ContactForm() {
   };
 
 	return (
-		<form onSubmit={handleSubmit} className="flex flex-col">
-      <input className="bg-transparent text-black border-b" type="text" value={formData.name} onChange={handleChange} id="first" name="name" placeholder="Name" required />
-      <input className="bg-transparent text-black border-b" type="email" value={formData.email} onChange={handleChange} id="email" name="email" placeholder="Email" required />
-      <input className="bg-transparent text-black border-b" type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" required />
-      <textarea className="bg-transparent text-black border-b" id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message" required></textarea>
-      <button type="submit">Submit</button>
+		<form onSubmit={handleSubmit} className="flex flex-col justify-center items-center">
+      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="text" value={formData.name} onChange={handleChange} id="first" name="name" placeholder="Name" required />
+      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="email" value={formData.email} onChange={handleChange} id="email" name="email" placeholder="Email Address" required />
+      <input className="bg-transparent text-black border-b text-white p-2 mb-2 w-full placeholder:text-white placeholder:opacity-50" type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" required />
+      <textarea className="bg-transparent text-black border-b text-white p-2 mb-10 w-full placeholder:text-white placeholder:opacity-50" id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" required></textarea>
+      <Btn label="Submit" variant={BtnVariant.Light}/>
     </form>
 	)
 }
