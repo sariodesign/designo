@@ -53,6 +53,7 @@ export default function AppDesign() {
         title="App design" 
         subtitle="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
+      <div className="hidden md:block bg-pattern-leaf absolute h-[594px] w-[1006px] bg-no-repeat left-0 top-[281px] z-0"></div>
       <ProjectList projects={appDesignProjects} />
       <Sections links={sectionList} lastItem={true} />
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />

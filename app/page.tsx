@@ -54,8 +54,10 @@ export default function Home() {
         cta={{label: "Learn more", href: "/about-us", variant: BtnVariant.Light}}
         image={{src: "/phone.png", alt:"Phone", width: 280, height: 573}}
       />
+      <div className="hidden md:block bg-pattern-leaf absolute h-[594px] w-[1006px] bg-no-repeat left-0 top-[475px] z-0"></div>
       <Sections links={sectionList} />
       <InfoContent contents={infoContentList} gap="gap-y-20 sm:gap-y-8 md:gap-x-[30px]" lastItem={true} />
+      <div className="hidden md:block bg-pattern-leaf absolute h-[594px] w-[1006px] bg-no-repeat right-0 top-[1879px] rotate-180 z-0"></div>
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />
     </main>
   )

@@ -58,6 +58,7 @@ export default function WebDesign() {
         title="Web design" 
         subtitle="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
       />
+      <div className="hidden md:block bg-pattern-leaf absolute h-[594px] w-[1006px] bg-no-repeat left-0 top-[281px] z-0"></div>
       <ProjectList projects={webDesignProjects} />
       <Sections links={sectionList} lastItem={true} />
       <Cta title="Let’s talk about your project" subtitle="Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow." ctaBtn={{label:"get in touch", href:"/contacts", variant:BtnVariant.Light}} />

@@ -19,13 +19,13 @@ interface HeroProps {
 	title: string,
 	subtitle: string,
 	cta?: ctaLink,
-	image?: imageItem
+	image?: imageItem,
 }
 
 export function Hero({...props}: HeroProps) {
-
-	const heroCls = "bg-peach bg-hero-pattern bg-no-repeat text-white text-center mb-[120px] sm:bg-[100px_-100px] md:bg-[top_right] py-[105px] sm:py-[64px] sm:rounded"
-	const heroWithImageCls = "bg-peach bg-hero-pattern bg-no-repeat text-center text-white h-[843px] mb-[120px] sm:bg-[100px_-100px] md:bg-[top_right] md:h-[640px] pt-20 px-6 overflow-hidden sm:rounded sm:px-[58px] sm:pt-[60px] md:text-left md:flex md:justify-between md:items-start md:pt-[145px] md:px-[95px]"
+	
+	const heroCls = `bg-peach bg-no-repeat text-white text-center mb-[120px] md:mb-[160px] relative z-10 py-[105px] sm:py-[64px] sm:h-[252px] sm:rounded`
+	const heroWithImageCls = "bg-peach bg-hero-pattern bg-no-repeat text-center text-white h-[843px] mb-[120px] md:mb-[160px] relative z-10 sm:bg-[100px_-100px] md:bg-[top_right] md:h-[640px] pt-20 px-6 overflow-hidden sm:rounded sm:px-[58px] sm:pt-[60px] md:text-left md:flex md:justify-between md:items-start md:pt-[145px] md:px-[95px]"
 
 	return (
 		<div className={props.image ? `${heroWithImageCls}` : `${heroCls}` }>

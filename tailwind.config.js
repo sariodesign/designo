@@ -21,16 +21,20 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-pattern': "url('/bg-pattern-hero-home.svg')",
+        'hero-pattern-mobile': "url('/bg-pattern-design-pages-intro-mobile.svg')",
         'cta-web-design': "url('/desktop/image-web-design.jpg')",
         'cta-app-design': "url('/desktop/image-app-design.jpg')",
         'cta-graphic-design': "url('/desktop/image-graphic-design.jpg')",
         'info-pattern': "url('/bg-pattern-design-pages-intro-mobile.svg')",
         'cta-pattern': "url('/bg-pattern-call-to-action.svg')",
+        'web-hero-pattern': "url('/bg-pattern-intro-web.svg')",
+        'app-hero-pattern': "url('/bg-pattern-intro-app.svg')",
+        'graphic-hero-pattern': "url('/bg-pattern-intro-graphic.svg')",
         'two-circles': "url('/bg-pattern-two-circles.svg')",
-        'three-circles': "url('/bg-pattern-three-circles.svg')"
+        'three-circles': "url('/bg-pattern-three-circles.svg')",
+        'pattern-leaf': "url('/bg-pattern-leaf.svg')"
       },
       colors: {
         'white': '#FFFFFF',

@@ -67,7 +67,7 @@ const footerNav = [
 
 export function Footer({cta}:{cta:boolean}) {
 	return (
-		<footer className={cta ? `text-center bg-black px-6 pb-16 pt-[255px] sm:pt-[166px]` : `text-center bg-black px-6 pb-16`}>
+		<footer className={cta ? `text-center bg-black px-6 pb-16 pt-[255px] relative z-10 sm:pt-[166px]` : `text-center bg-black px-6 pb-16 relative z-10`}>
 			<div className="sm:max-w-[688px] md:max-w-[1110px] sm:mx-auto">
 				<div className="sm:flex sm:justify-between sm:pb-10 sm:mb-8 sm:border-b-[1px] sm:border-footer-color">
 					<Image

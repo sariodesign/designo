@@ -12,7 +12,7 @@ export function InfoContent({...props}:InfoContentProps) {
 	if (!props.contents) return null;
 
 	return (
-		<div className={props.lastItem ? `flex flex-col ${props.gap} px-6 mb-[311px] md:px-0 md:flex-row` : `flex flex-col ${props.gap} px-6 py-[120px] md:px-0 md:flex-row`}>
+		<div className={props.lastItem ? `flex flex-col ${props.gap} px-6 mb-[350px] md:px-0 md:flex-row md:relative md:z-10` : `flex flex-col ${props.gap} px-6 py-[120px] md:px-0 md:flex-row md:relative md:z-10`}>
 			{props.contents.map((content) => (
 				<InfoBlock key={content.name} {...content} />
 			))}
