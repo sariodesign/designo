@@ -39,7 +39,7 @@ export function Header() {
 
   return (
     <header className="relative sm:flex sm:items-center sm:justify-between">
-			<div className="bg-white flex justify-between items-center px-6 py-8 relative z-10 sm:px-0 sm:py-12">
+			<div className="bg-white flex justify-between items-center px-6 py-8 relative z-10 sm:px-0 sm:py-12 md:py-16">
 				<Link href="/">
 					<Image 
 						src="/logo-dark.png"

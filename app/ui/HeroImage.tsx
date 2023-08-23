@@ -22,7 +22,7 @@ interface HeroProps {
 export function HeroImage({...props}: HeroProps) {
 
 	return (
-		<div className="bg-peach bg-hero-pattern bg-no-repeat bg-left-bottom flex flex-col overflow-hidden text-center text-white [ sm:bg-[100px_-100px] sm:rounded sm:mb-[120px] ] [ md:bg-[top_right] md:text-left md:flex md:flex-row-reverse md:justify-between md:items-center ]">
+		<div className="bg-peach bg-hero-pattern bg-no-repeat bg-left-bottom flex flex-col overflow-hidden text-center text-white [ sm:bg-[100px_-100px] sm:rounded sm:mb-[120px] md:mb-[160px] ] [ md:bg-[top_right] md:text-left md:flex md:flex-row-reverse md:justify-between md:items-center ]">
 			<picture className="md:max-w-[476px]">
 				<source srcSet={props.image!.responsive?.desktop} media="(min-width: 1024px)" />
 				<source srcSet={props.image!.responsive?.tablet} media="(min-width: 768px)" />

@@ -12,9 +12,9 @@ export interface BtnProps {
 	variant: BtnVariant
 }
 
-const btnBaseCls = "inline-block w-[152px] py-[16px] rounded-[8px] text-base text-center transition uppercase"
+const btnBaseCls = "inline-block w-[152px] py-[16px] rounded-[8px] text-base text-center transition uppercase hover:bg-light-peach"
 const btnPrimaryCls = "bg-peach text-white"
-const btnLightCls = "bg-white text-black hover:bg-light-peach"
+const btnLightCls = "bg-white text-black hover:text-white"
 
 export function Btn({...props}: BtnProps) {
 
